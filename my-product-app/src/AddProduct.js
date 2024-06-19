@@ -46,8 +46,10 @@ const AddProduct = () => {
                 <label>Price</label>
                 <input type="number" name="price" value={product.price} onChange={handleChange} />
             </div>
-            <button type="submit">Submit</button>
-            <button type="button">Cancel</button>
+            <div className="button-container">
+                <button type="submit">Submit</button>
+                <button type="button">Cancel</button>
+            </div>
         </form>
     );
 };
