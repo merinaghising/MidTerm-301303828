@@ -1,6 +1,6 @@
 // MainPage.js
 import React from 'react';
-import './styles.css'; // Import the CSS file
+import './styles.css'; 
 import AddProduct from './AddProduct';
 import SignUpUser from './SignUpUser';
 
