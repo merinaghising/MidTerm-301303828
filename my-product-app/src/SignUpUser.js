@@ -3,7 +3,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 
 const SignUpUser = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = (data) => {
         if (data.password !== data.confirmPassword) {
             alert('Passwords do not match');
@@ -48,11 +48,14 @@ const SignUpUser = () => {
                 <input type="password" {...register("confirmPassword", { required: true })} />
                 {errors.confirmPassword && <span>This field is required</span>}
             </div>
-            <button type="submit">Submit</button>
-            <button type="button">Cancel</button>
+            <div className="button-container">
+                <button type="submit">Submit</button>
+                <button type="button">Cancel</button>
+            </div>
         </form>
     );
 };
 
 export default SignUpUser;
+
 
