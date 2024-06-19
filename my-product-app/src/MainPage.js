@@ -1,5 +1,6 @@
 // MainPage.js
 import React from 'react';
+import './styles.css'; 
 import AddProduct from './AddProduct';
 import SignUpUser from './SignUpUser';
 
